@@ -1,3 +1,8 @@
+:root {
+  --likelion-color: #ff9700;
+  --react-color: #5fd3f2;
+}
+
 body {
   margin: 0px;
   background-color: #130f40;
@@ -64,36 +69,36 @@ body {
 } */
 
 .fa-angular {
-  text-shadow: 5px 5px 3px white;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .fa-vuejs {
-  text-shadow: 5px 5px 3px white;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .welcome__banner > .fa-react {
-  text-shadow: 5px 5px 3px white;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .fa-js-square {
-  text-shadow: 5px 5px 3px yellow;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .fa-sass {
-  text-shadow: 5px 5px 3px white;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .fa-css3-alt {
-  text-shadow: 5px 5px 3px #2762e9;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .fa-html5 {
-  text-shadow: 5px 5px 3px #f16529;
+  text-shadow: 5px 5px 3px whitesmoke;
 }
 
 .welcome__banner--title {
   color: white;
-  text-shadow: 1px 1px 15px #5fd3f2;
+  text-shadow: 1px 1px 15px var(--likelion-color);
 }
 
 .welcome__title,
@@ -216,10 +221,10 @@ p {
 }
 
 .login a:hover {
-  background: #ff9700;
+  background: #5fd3f2;
   color: #fff;
   border-radius: 50px;
-  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 100px #ff9700;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 100px #5fd3f2;
 }
 
 .login a span {
@@ -271,7 +276,7 @@ p {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #ff9700);
+  background: linear-gradient(270deg, transparent, #5fd3f2);
   animation: btn-anim3 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -291,7 +296,7 @@ p {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #ff9700);
+  background: linear-gradient(360deg, transparent, #5fd3f2);
   animation: btn-anim4 1s linear infinite;
   animation-delay: 0.75s;
 }
