@@ -6,8 +6,9 @@
 
 body {
   margin: 0px;
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  background-color: #1c1c1c;
+  /* background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
   /* background-color: #130f40;
   background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
   height: 100vh;
@@ -372,12 +373,6 @@ p {
 
 /* 프로필 */
 
-#body-profile {
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-  height: 100vh;
-}
-
 /* navbar */
 .navbar {
   display: flex;
@@ -387,7 +382,7 @@ p {
 .navbar a:hover {
   background: #eaeaea;
   color: var(--likelion-color);
-  border-radius: 50px;
+  border-radius: 50%;
   box-shadow: 0 0 5px #eaeaea, 0 0 25px #eaeaea, 0 0 50px #eaeaea,
     0 0 100px #eaeaea;
 }
@@ -400,6 +395,7 @@ p {
 .navbar > a {
   margin-top: 30px;
   text-align: center;
+  width: 50%;
   height: 60px;
   margin-left: 25px;
   margin-right: 25px;
@@ -656,7 +652,15 @@ hr {
 .fa-comment {
   font-size: 35px;
   margin-left: 45px;
-  color: var(--status-color);
+  color: black;
+}
+
+.fa-comment:hover {
+  background: var(--likelion-color);
+  color: var(--likelion-color);
+  border-radius: 50%;
+  box-shadow: 0 0 1px var(--likelion-color), 0 0 10px var(--likelion-color),
+    0 0 25px var(--likelion-color), 0 0 100px var(--likelion-color);
 }
 
 .footer__item {
@@ -685,4 +689,45 @@ hr {
   position: relative;
   right: 20px;
   bottom: 10px;
+  text-decoration: none;
+  animation: messageAnimation 2s ease-in-out infinite;
+}
+
+@keyframes messageAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-15px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes hideSplash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.splash {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  font-size: 50px;
+  animation: hideSplash 3.5s ease-in-out forwards;
+}
+
+.splash img {
+  width: 400px;
 }
