@@ -629,10 +629,6 @@ hr {
   background-color: #666666;
 }
 
-.fa-user {
-  font-size: 50px;
-}
-
 #html,
 #css,
 #javascript,
@@ -648,3 +644,45 @@ hr {
   animation: rotate_icon180 3s infinite;
   transform-origin: 50% 50%;
 } */
+
+.fa-user {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+  color: var(--status-color);
+}
+
+.fa-comment {
+  font-size: 35px;
+  margin-left: 45px;
+  color: var(--status-color);
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 27px;
+  font-size: 13px;
+  color: var(--status-color);
+  width: 100vh;
+  margin-top: -5px;
+}
+
+.footer__message {
+  border-radius: 15px;
+  padding: 2px 12px;
+  font-size: 13px;
+  background-color: red;
+  font-weight: 800;
+  color: whitesmoke;
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+}
